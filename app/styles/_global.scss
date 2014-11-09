@@ -21,3 +21,9 @@ body {
 section + section {
   margin-top: 10em;
 }
+
+#brand-site img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
