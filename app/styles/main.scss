@@ -4,4 +4,7 @@
 
 $max-width: 24em;
 
+$z-index-stage: -10;
+
 @import 'global';
+@import 'stage';
