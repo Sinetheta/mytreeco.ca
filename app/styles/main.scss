@@ -2,10 +2,12 @@
 @import "bourbon/dist/_bourbon.scss";
 // endbower
 
+
 $max-width: 24em;
 
 $z-index-stage: -10;
 
 
+@import 'mixins';
 @import 'global';
 @import 'stage';
