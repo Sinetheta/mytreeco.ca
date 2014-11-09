@@ -1,0 +1,22 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  background: #fafafa;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+  color: #000;
+  background: #ccc;
+}
+
+section + section {
+  margin-top: 10em;
+}
