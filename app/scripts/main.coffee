@@ -1,1 +1,3 @@
-console.log "'Allo from CoffeeScript!"
+$ ->
+  cloudContainer = $('#clouds')
+  clouds = new Clouds(cloudContainer)
