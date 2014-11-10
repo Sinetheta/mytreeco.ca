@@ -5,6 +5,7 @@
   height: 100%;
   @include linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
   z-index: $z-index-stage;
+  -webkit-transform: translateZ(0);
 }
 
 #clouds {
