@@ -1,11 +1,13 @@
 class Movable
   constructor: ({@container}) ->
-    @wrapper = $('<div>')
+    @wrapper = $(@template)
     @wrapper.css(
-        top: @getHeight()
+        top: @distance * 100 + '%'
         width: '100%'
       )
       .appendTo(@container)
+
+  template: '<div class="cloud-wrapper">'
 
   distance: 0
 
