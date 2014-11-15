@@ -19,17 +19,21 @@ class Movable
     top: '0%'
     left: '0%'
 
-  drift: =>
+  drift: (progress = 0) =>
     dfd = new $.Deferred()
     speed = 1 - @distance
     travelTime = @greatestTravelTime / speed
+    animationDelay = Math.floor(-progress * travelTime)
     @wrapper.css(
-      animation: "moveAcross #{travelTime}s linear"
       zIndex: -Math.floor(travelTime)
+      animation: "moveAcross #{travelTime}s linear"
+      'animation-delay': "#{animationDelay}s"
+      '-moz-animation-delay': "#{animationDelay}s"
+      '-webkit-animation-delay': "#{animationDelay}s"
     )
     setTimeout =>
       dfd.resolve(this)
-    , travelTime * 1000
+    , (travelTime + animationDelay) * 1000
     dfd.promise()
 
 
