@@ -13,8 +13,6 @@ class Movable
 
   direction: -1
 
-  scale: 1
-
   greatestTravelTime: 30
 
   position:
@@ -23,7 +21,7 @@ class Movable
 
   drift: =>
     dfd = new $.Deferred()
-    speed = @scale * (1 - @distance)
+    speed = 1 - @distance
     travelTime = @greatestTravelTime / speed
     @wrapper.css(
       animation: "moveAcross #{travelTime}s linear"
@@ -33,9 +31,6 @@ class Movable
       dfd.resolve(this)
     , travelTime * 1000
     dfd.promise()
-
-  getHeight: =>
-    (1 - @distance) * @scale * 100 + '%'
 
 
 window.Movable = Movable
