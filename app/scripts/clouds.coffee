@@ -1,5 +1,6 @@
 class Clouds
   constructor: (@element) ->
+    @prepopulateClouds()
     @startClouds()
 
   _store: []
@@ -9,11 +10,14 @@ class Clouds
   add: (cloud) =>
     @_store.push(cloud)
 
-  startClouds: =>
+  createCloud: (progress) =>
     cloud = new Cloud({parent: @element})
     @add(cloud)
-    cloud.drift().then =>
+    cloud.drift(progress).then =>
       @remove(cloud)
+
+  startClouds: =>
+    @createCloud()
     @_timeout = setTimeout(@startClouds, @maxWait * 1000 * Math.random())
 
   stopClouds: =>
@@ -24,5 +28,7 @@ class Clouds
     @_store = @_store.filter (member) ->
       member is not cloud
 
+  prepopulateClouds: =>
+    @createCloud(Math.random()) for num in [0...3]
 
 window.Clouds = Clouds
