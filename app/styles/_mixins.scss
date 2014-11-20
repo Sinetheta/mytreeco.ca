@@ -13,3 +13,10 @@
     display: inline;
   }
 }
+
+@mixin cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  @include fixed-position-bugfix();
+}

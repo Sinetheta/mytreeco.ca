@@ -72,34 +72,51 @@
 }
 
 #page-footer {
+  display: inline-block;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 600px;
-  background: url(/images/footer.svg);
-  background-size: 100% 100%;
-  -webkit-transform: translateZ(0);
-}
+  max-height: 600px;
 
-#page-footer-extend {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 600px;
-  background-image: url(/images/footer_extend.svg);
-  background-size: 100% 100%;
-  -webkit-transform: translateZ(0);
-}
+  * {
+    pointer-events: auto;
+  }
 
-#page-footer-trees {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 600px;
-  background-image: url(/images/small_trees.svg);
-  background-size: 100% 100%;
-  -webkit-transform: translateZ(0);
-  animation: grow 5s;
+  .footer-extend,
+  .footer-main,
+  .footer-mountains,
+  .two-trees {
+    @include cover();
+  }
+
+
+  .centered {
+    position: static;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+
+    &:after {
+      padding-top: percentage(600px/1024px);
+      display: block;
+      content: '';
+    }
+
+    .footer-main {
+      background: url(/images/footer.svg);
+      background-size: cover;
+    }
+    .trees {
+      background: url(/images/small_trees.svg);
+      animation: grow 5s;
+    }
+  }
+  .ground {
+    background-image: url(/images/footer_extend.svg);
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
 }
 
 @keyframes grow {

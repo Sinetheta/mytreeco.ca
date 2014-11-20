@@ -1,28 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1024px" height="600px" viewBox="0 0 1024 600" enable-background="new 0 0 1024 600" xml:space="preserve" preserveAspectRatio="none">
-<defs>
-  <filter id="drop-shadow">
-    <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
-    <feOffset dx="0" dy="0" result="offsetblur"/>
-    <feFlood flood-color="#ADADAD"/>
-    <feComposite operator="in" in2="offsetblur"/>
-    <feMerge>
-      <feMergeNode/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-</defs>
-<g id="scene" filter="url(#drop-shadow)">
-  <g id="ground_extension">
-    <g id="right_extension">
-        <path fill="#604F3F" d="M1024 422.439c2 0.4 190.8 16.7 266.8 12.847c75.916-3.807 400.583-20.49 497.249-16.13 c96.666 4.4 260 3.3 260 3.283v178.374H1024V422.439z"/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="5024px" height="600px" viewBox="-1997.434 0 5024 600" enable-background="new -1997.434 0 5024 600" xml:space="preserve"
+    >
+  <defs>
+    <filter id="drop-shadow">
+      <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+      <feOffset dx="0" dy="0" result="offsetblur"/>
+      <feFlood flood-color="#ADADAD"/>
+      <feComposite operator="in" in2="offsetblur"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<g id="extendo">
+<g id="ground_x5F_extension">
+    <g id="right_x5F_extension">
+        <path fill="#604F3F" d="M1009.483,422.438c3.906,0.4,372.638,16.7,521.069,12.847c148.266-3.807,782.351-20.49,971.143-16.13
+            c188.792,4.4,507.788,3.3,507.788,3.283v178.374h-2000V422.438z"/>
     </g>
-    <g id="left_extension">
-        <path fill="#604F3F" d="M-1024 422.439c2 0.4 190.8 16.7 266.8 12.847c75.915-3.807 400.583-20.49 497.249-16.13 C-163.335 423.5 0 422.4 0 422.439v178.374h-1024V422.439z"/>
+    <g id="left_x5F_extension">
+        <path fill="#604F3F" d="M-2000,422.438c3.906,0.4,372.656,16.7,521.094,12.847c148.271-3.807,782.389-20.49,971.189-16.13
+            C-319.014,423.5,0,422.4,0,422.438v178.374h-2000V422.438z"/>
     </g>
-  </g>
 </g>
 <g id="block">
-  <rect id="left_block" x="-0.7" y="423" fill="#604F3F" width="9" height="177"/>
-  <rect id="right_block" x="1016" y="423" fill="#604F3F" width="9" height="177"/>
+    <rect id="left_x5F_block" x="-0.7" y="422.5" fill="#604F3F" width="5" height="178.4"/>
+    <rect id="right_x5F_block" x="1019.7" y="422.5" fill="#604F3F" width="5" height="178.4"/>
+</g>
 </g>
 </svg>
