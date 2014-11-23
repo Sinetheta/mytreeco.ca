@@ -25,31 +25,25 @@
     <svg height="0px" >
       <defs>
         <filter id="drop-shadow">
-          <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
-          <feOffset dx="0" dy="0" result="offsetblur"/>
-          <feFlood flood-color="#ADADAD"/>
-          <feComposite operator="in" in2="offsetblur"/>
+          <feGaussianBlur stdDeviation="4" in="SourceAlpha" ></feGaussianBlur>
+          <feOffset dx="0" dy="0" result="offsetblur" ></feOffset>
+          <feFlood flood-color="#727272"></feFlood>
+          <feComposite operator="in" in2="offsetblur" ></feComposite>
           <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
+            <feMergeNode in="SourceGraphic" ></feMergeNode>
           </feMerge>
         </filter>
       </defs>
-      <symbol id="all_trees" viewBox="0 0 1024 600">
-          <g id="left_tree">
-            <path id="left_tree_trunk" fill="#654D00" d="M882.791 427.338c0 0-6.769-34.965-18.046-75.566 c-11.278-40.606-15.229-52.449-15.229-52.449l23.95 62.92c0 0-1.388-62.672-1.388-88.172c0-25.499 6.2-41.288 6.2-41.288 l4.513 97.277l29.325-42.016c0 0-23.122 43.425-24.811 56.958c-1.693 13.5 8.5 82.3 8.5 82.336H882.791z"/>
-            <path id="left_tree_shrub" fill="#1A801A" d="M949.939 262.102c-0.012 18.525-14.698 39.1-32.06 43.8 c-17.358 4.676-27.388 3.691-27.388 3.691s-34.645 27.338-55.763 12.44c-21.113-14.896-26.377-53.305-8.979-84.035 C850.923 193.5 950 189.8 949.9 262.102z"/>
-            <path id="left_tree_right_leaf" fill="#1F9921" d="M908.365 297.589c0 0-9.737-4.743-4.325-14.961 c5.418-10.219 11.446-11.362 11.446-11.362s2.979 5.9 3.4 12.365C919.689 295.8 908.4 297.6 908.4 297.589z"/>
-            <path id="left_tree_middle_leaf" fill="#1F9921" d="M907.46 296.135c0 0-7.015 4.745-11.825-2.902 c-4.812-7.654-3.235-12.183-3.235-12.183s5.14 0.3 9.7 2.513C910.629 287.8 907.5 296.1 907.5 296.135z"/>
-            <path id="left_tree_left_leaf" fill="#1F9921" d="M851.941 305.897c0 0-5.241-0.358-4.673-5.939c0.571-5.582 3.074-7.193 3.074-7.193 s2.413 2.1 3.8 4.939C856.699 303 851.9 305.9 851.9 305.897z"/>
-        </g>
-        <g id="right_tree" >
-          <path id="right_tree_trunk" fill="#654D00" d="M963.909 429.915c0 0 2.255-60.207 0-98.34c-2.256-38.131 2.817-42.024 2.817-42.024 s3.385 48.4 4.5 83.972c1.126 35.5 7.9 56.4 7.9 56.393H963.909z"/>
-          <path id="right_tree_upper_right_leaf" fill="#1F9921" d="M966.155 299.34c0 0-9.74-4.745-4.326-14.962 c5.412-10.219 11.442-11.363 11.442-11.363s2.982 5.9 3.4 12.366C977.473 297.5 966.2 299.3 966.2 299.34z"/>
-          <path id="right_tree_upper_left_leaf" fill="#1F9921" d="M965.242 297.885c0 0-7.014 4.745-11.821-2.902 c-4.81-7.653-3.237-12.182-3.237-12.182s5.138 0.3 9.7 2.51C968.415 289.5 965.2 297.9 965.2 297.885z"/>
-          <path id="right_tree_lower_leaf" fill="#1F9921" d="M970.617 361.916c0 0-4.686-5.914 1.781-10.703c6.477-4.804 10.609-3.707 10.609-3.707 s0.113 4.579-1.572 8.797C978.293 364.2 970.6 361.9 970.6 361.916z"/>
-        </g>
-      </g>
+      <symbol id="all_trees_viewbox" width="1024px" height="600px" viewBox="0 0 1024 600" preserveAspectRatio="none">
+        <path id="left_tree_shrub" fill="#2E732E" d="M949.9 262.1c0 18.5-14.7 39.1-32.1 43.8c-17.4 4.7-27.4 3.7-27.4 3.7 s-34.6 27.3-55.8 12.4c-21.1-14.9-26.4-53.3-9-84C850.9 193.5 950 189.8 949.9 262.1z" ></path>
+        <path id="left_tree_trunk" fill="#655114" d="M884.9 458.7c0 0-5.5-61.7-20.1-106.9c-12.9-40.1-15.2-52.4-15.2-52.4l24 62.9 c0 0-1.4-62.7-1.4-88.2c0-25.5 6.2-41.3 6.2-41.3l4.5 97.3l29.3-42c0 0-24.4 43.3-24.8 57c-1.1 33.8 10.5 113.7 10.5 113.7H884.9z"></path>
+        <path id="left_tree_middle_leaf" fill="#3D993F" d="M907.5 296.1c0 0-7 4.7-11.8-2.9c-4.8-7.7-3.2-12.2-3.2-12.2 s5.1 0.3 9.7 2.5C910.6 287.8 907.5 296.1 907.5 296.1z"></path>
+        <path id="left_tree_left_leaf" fill="#3D993F" d="M851.9 305.9c0 0-5.2-0.4-4.7-5.9c0.6-5.6 3.1-7.2 3.1-7.2 s2.4 2.1 3.8 4.9C856.7 303 851.9 305.9 851.9 305.9z"></path>
+        <path id="left_tree_right_leaf" fill="#3D993F" d="M908.4 297.6c0 0-9.7-4.7-4.3-15c5.4-10.2 11.4-11.4 11.4-11.4 s3 5.9 3.4 12.4C919.7 295.8 908.4 297.6 908.4 297.6z"></path>
+        <path id="right_tree_trunk" fill="#655114" d="M963.3 460c0 0 2.8-90.3 0.6-128.4c-2.3-38.1 2.8-42 2.8-42s3.4 48.4 4.5 84 c1.1 35.5 9.1 87.3 9.1 87.3L963.3 460z"></path>
+        <path id="right_tree_lower_leaf" fill="#3D993F" d="M970.6 361.9c0 0-4.7-5.9 1.8-10.7c6.5-4.8 10.6-3.7 10.6-3.7 s0.1 4.6-1.6 8.8C978.3 364.2 970.6 361.9 970.6 361.9z"></path>
+        <path id="right_tree_upper_left_leaf" fill="#3D993F" d="M965.2 297.9c0 0-7 4.7-11.8-2.9 c-4.8-7.7-3.2-12.2-3.2-12.2s5.1 0.3 9.7 2.5C968.4 289.5 965.2 297.9 965.2 297.9z"></path>
+        <path id="right_tree_upper_right_leaf" fill="#3D993F" d="M966.2 299.3c0 0-9.7-4.7-4.3-15 c5.4-10.2 11.4-11.4 11.4-11.4s3 5.9 3.4 12.4C977.5 297.5 966.2 299.3 966.2 299.3z"></path>
       </symbol>
     </svg>
     <!--[if lt IE 10]>
@@ -101,20 +95,21 @@
     <footer id="page-footer">
       <div class="footer-extend"></div>
       <div class="centered">
-        <div class="footer-main"></div>
+        <div class="footer-mountains"></div>
         <div>
           <svg width="100%" height="600px" viewBox="0 0 1024 600" filter="url(#drop-shadow)">
-            <use id="ani_left_tree_shrub" xlink:href="#left_tree_shrub" />
-            <use id="ani_left_tree_right_leaf" xlink:href="#left_tree_right_leaf" />
-            <use id="ani_left_tree_middle_leaf" xlink:href="#left_tree_middle_leaf" />
-            <use id="ani_left_tree_trunk" xlink:href="#left_tree_trunk" />
-            <use id="ani_left_tree_left_leaf" xlink:href="#left_tree_left_leaf" />
-            <use id="ani_right_tree_upper_right_leaf" xlink:href="#right_tree_upper_right_leaf" />
-            <use id="ani_right_tree_upper_left_leaf" xlink:href="#right_tree_upper_left_leaf" />
-            <use id="ani_right_tree_lower_leaf" xlink:href="#right_tree_lower_leaf" />
-            <use id="ani_right_tree_trunk" xlink:href="#right_tree_trunk" />
+            <use id="ani_left_tree_shrub" xlink:href="#left_tree_shrub" ></use>
+            <use id="ani_left_tree_right_leaf" xlink:href="#left_tree_right_leaf" ></use>
+            <use id="ani_left_tree_middle_leaf" xlink:href="#left_tree_middle_leaf" ></use>
+            <use id="ani_left_tree_trunk" xlink:href="#left_tree_trunk" ></use>
+            <use id="ani_left_tree_left_leaf" xlink:href="#left_tree_left_leaf" ></use>
+            <use id="ani_right_tree_upper_right_leaf" xlink:href="#right_tree_upper_right_leaf" ></use>
+            <use id="ani_right_tree_upper_left_leaf" xlink:href="#right_tree_upper_left_leaf" ></use>
+            <use id="ani_right_tree_lower_leaf" xlink:href="#right_tree_lower_leaf" ></use>
+            <use id="ani_right_tree_trunk" xlink:href="#right_tree_trunk" ></use>
           </svg>
         </div>
+        <div class="footer-main"></div>
       </div>
     </footer>
 

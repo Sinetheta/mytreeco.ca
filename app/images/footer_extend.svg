@@ -1,32 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="5024px" height="600px" viewBox="0 0 5024 600" enable-background="new 0 0 5024 600" xml:space="preserve">
 <defs>
-      <filter id="drop-shadow">
-      <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
-      <feOffset dx="0" dy="0" result="offsetblur"/>
-      <feFlood flood-color="#ADADAD"/>
-      <feComposite operator="in" in2="offsetblur"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-      <rect id="SVGID_1_" x="1748.5" y="269" width="258.1" height="194"/>
-    </defs>
-    <g filter="url(#drop-shadow)">
-  <g>
-
-    <clipPath id="SVGID_2_">
-      <use xlink:href="#SVGID_1_" overflow="visible"/>
-    </clipPath>
-    <g id="left_mountain" clip-path="url(#SVGID_2_)">
-        <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1985.2" y1="265.9" x2="1985.2" y2="119.5" gradientTransform="matrix(1 0 0 -1 116 595)">
-        <stop offset="0" style="stop-color:#CBCACA"/>
-        <stop offset="1" style="stop-color:#959393"/>
-      </linearGradient>
-      <polyline fill="url(#SVGID_3_)" points="2350.6,449.7 2093.1,329.1 1851.8,475.5"/>
-    </g>
-  </g>
-</g>
+  <filter id="drop-shadow">
+    <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+    <feOffset dx="0" dy="0" result="offsetblur"/>
+    <feFlood flood-color="#727272"/>
+    <feComposite operator="in" in2="offsetblur"/>
+    <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+<g filter="url(#drop-shadow)">
 <g id="extendo">
   <g id="ground_extension">
     <g id="right_extension">
@@ -36,9 +21,6 @@
       <path fill="#604F3F" d="M7.3 422.4c3.9 0.4 372.7 16.7 521.1 12.8c148.3-3.8 782.4-20.5 971.2-16.1 c188.7 4.3 507.7 3.2 507.7 3.3v178.4H7.3V422.4z"/>
     </g>
   </g>
-  <g id="block">
-    <rect id="left_block" x="2006.6" y="422.5" fill="#604F3F" width="5" height="178.4"/>
-    <rect id="right_block" x="3027" y="422.5" fill="#604F3F" width="5" height="178.4"/>
-  </g>
+</g>
 </g>
 </svg>
