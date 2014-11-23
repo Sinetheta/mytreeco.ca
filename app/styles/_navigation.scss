@@ -1,3 +1,41 @@
 #navigation-page {
   @include horizontal-list();
 }
+
+.main-menu {
+  @include horizontal-list();
+}
+
+.main-menu {
+    color: #D2D2D5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .7em;
+    font-family: 'Lato', sans-serif;
+}
+.main-menu li.active{
+    color: #1A801A;
+    background: #fff
+}
+.main-menu li a {
+    padding: 5px 8px;
+    margin: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px #fff solid;
+    background: rgba(170, 233, 249, 0.7);
+    background-image: url(/images/texture2.png);
+}
+
+.main-menu li a span{
+    color: #555;
+}
+.main-menu li.active a,
+.main-menu li a:hover {
+    color: #1A801A;
+    background: rgba(255, 255, 255, 1)
+}
+.main-menu li.active a span,
+.main-menu li a:hover span{
+    color: #A3A3A3;
+}
