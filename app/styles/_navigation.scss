@@ -6,6 +6,15 @@
   @include horizontal-list();
 }
 
+.top-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  background: #296D2F;
+}
+
 .main-menu {
     color: #D2D2D5;
     text-transform: uppercase;
@@ -24,7 +33,7 @@
     text-decoration: none;
     border: 2px #fff solid;
     background: rgba(170, 233, 249, 0.7);
-    background-image: url(/images/texture2.png);
+    background-image: url(/images/texture.png);
 }
 
 .main-menu li a span{
