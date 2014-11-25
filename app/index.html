@@ -49,33 +49,37 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="top-nav"><img src="/images/logo_white.svg" alt="Treeco Tree Service" ></img></div>
     <div class="container">
-      <h1 id="brand-site">
-        <img src="/images/logo_green.svg" alt="Treeco Tree Service"></img>
-      </h1>
-      <nav class="main-menu">
-        <ul>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#other-thing">Other Thing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="main-menu" data-magellan-expedition="fixed">
+        <div class="container">
+        <h1 class="brand-site">
+          <img src="/images/logo_green.svg" alt="Treeco Tree Service" class="hide-fixed"></img>
+          <img src="/images/logo_white.svg" alt="Treeco Tree Service" class="show-fixed"></img>
+        </h1>
+          <nav>
+            <ul>
+              <li data-magellan-arrival="intro"><a href="#intro">Intro</a></li>
+              <li data-magellan-arrival="other-thing"><a href="#other-thing">Other Thing</a></li>
+              <li data-magellan-arrival="contact"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        <div class="container">
       </nav>
 
-      <section id="intro">
+      <section id="intro" data-magellan-destination="intro">
         <h2>Intro</h2>
         <p>Why didn't you just tell them were the microfilm was and create a solution?</p>
         <p>Well I'm one of those fortunate people who like my job sir. Got my first chemistry set when I was seven blew my eyebrows off we never saw the cat again been into it ever since. Honey? Uh... You wanna know who really killed JFK? Define combat sir.</p>
         <p>We're stuck on an island with a bunch of violence-for-pleasure-seeking psychopathic marines SHAME-ON-THEM!</p>
       </section>
 
-      <section id="other-thing">
+      <section id="other-thing" data-magellan-destination="other-thing">
         <h2>Other thing</h2>
         <p>You know I like history too and maybe when this is all over you and I can stop by the souvenir shop together but right now I just... I just wanna find some rockets!</p>
         <p>Sorry boss but there's only two men I trust. One of them's me. The other's not you. Put... the bunny... back... in the box.</p>
       </section>
 
-      <section id="contact">
+      <section id="contact" data-magellan-destination="contact">
         <h2>Contact</h2>
         <p>They somehow managed to get every creep and freak in the universe onto this one plane. And then somehow managed to let them take it over.</p>
       </section>

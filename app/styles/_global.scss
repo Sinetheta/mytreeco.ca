@@ -17,6 +17,11 @@ h2 {
   margin: 0 auto;
 }
 
+section {
+  width: 55%;
+  margin: 0 auto;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   padding: 0.2em 0;
@@ -28,8 +33,6 @@ section + section {
   margin-top: 10em;
 }
 
-#brand-site img {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
+section:last-of-type {
+  margin-bottom: 15em;
 }
