@@ -2,10 +2,11 @@ $ ->
   cloudContainer = $('#clouds')
   clouds = new Clouds(cloudContainer)
 
-  menuOffset = $('.main-menu ul').offset().top - $('.main-menu').offset().top
+  mainMenu = new MainMenu($('.main-menu ul'), $('.main-menu'))
 
   $(document).foundation
     'magellan-expedition':
       destination_threshold: 200
-      threshold: menuOffset
+
+      threshold: mainMenu.offset()
 
