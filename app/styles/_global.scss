@@ -18,8 +18,8 @@ h2 {
 }
 
 section {
-  width: 55%;
-  margin: 0 auto;
+  width: 70%;
+  margin-left: 23%;
 }
 
 .browsehappy {
@@ -35,4 +35,10 @@ section + section {
 
 section:last-of-type {
   margin-bottom: 15em;
+}
+
+hr {
+  width: 80%;
+  height: 10px;
+  margin-left: 15%;
 }
