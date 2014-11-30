@@ -47,7 +47,7 @@
 
   &.fixed {
     height: $tabbar-height;
-    background: green;
+    left: 0;
     .brand-site {
       position: absolute;
       top: 0;
@@ -55,7 +55,7 @@
       height: $tabbar-height;
       margin: 0;
       img {
-        content:url('/images/logo_white.svg');
+        content:url('/images/logo_green.svg');
       }
     }
   }
