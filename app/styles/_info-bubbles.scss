@@ -10,6 +10,8 @@ $info-button-radius: 0.7em;
   border: 2px solid white;
   border-radius: $info-button-radius;
   background: grey;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 #page-footer [info-bubble-target] {

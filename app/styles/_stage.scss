@@ -77,6 +77,7 @@
   .footer-main,
   .footer-mountains,
   .two-trees {
+    pointer-events: none;
     @include cover();
   }
 
@@ -87,6 +88,7 @@
     height: 100%;
     width: 100%;
     max-width: 1024px;
+    pointer-events: none;
 
     &:after {
       padding-top: percentage(600px/1024px);
