@@ -113,6 +113,12 @@
   }
 }
 
+.tree-grow {
+  display: none;
+  .magellan-arrived-sustainability & {
+    display: block;
+  }
+}
 #ani_left_tree_shrub {
   animation: ani1 7s;
   animation-timing-function: ease-out; }
