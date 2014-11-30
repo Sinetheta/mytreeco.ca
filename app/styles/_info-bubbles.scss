@@ -1,0 +1,22 @@
+$info-button-radius: 0.7em;
+
+.info-button {
+  display: block;
+  width: 2 * $info-button-radius;
+  height: 2 * $info-button-radius;
+  margin: 0;
+  padding: 0;
+  color: white;
+  border: 2px solid white;
+  border-radius: $info-button-radius;
+  background: grey;
+}
+
+#page-footer [info-bubble-target] {
+  position: absolute;
+}
+
+[info-bubble-target="#chainsaw-info"] {
+  top: 15%;
+  left: 15%;
+}
