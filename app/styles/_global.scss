@@ -17,10 +17,11 @@ h2 {
 
 a {
   color: #2E732E;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
+  color: #1D471D;
   text-decoration: underline;
 }
 
@@ -111,4 +112,26 @@ section:last-of-type {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  section {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .content-services-right {
+    width: 45%;
+  }
+  .content-services-left {
+    width: 45%;
+  }
+
+
 }

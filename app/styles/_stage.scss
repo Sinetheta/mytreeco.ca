@@ -117,56 +117,46 @@
     display: block;
   }
 }
-#ani_left_tree_shrub {
-  animation: ani1 5s;
-  animation-timing-function: ease-out; }
+#ani_left_tree_shrub { animation: ani1 .9s;}
 @keyframes ani1 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
   70% { transform: translate(880px, 310px) scale(0, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
-#ani_left_tree_right_leaf {
-  animation: ani2 7s; }
+#ani_left_tree_right_leaf { animation: ani2 1s; }
 @keyframes ani2 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
   51% { transform: translate(0px, 300px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
-#ani_left_tree_middle_leaf {
-  animation: ani2 8s; }
+#ani_left_tree_middle_leaf { animation: ani2 1.1s; }
 
-#ani_left_tree_trunk {
-  animation: ani4 3s; }
+#ani_left_tree_trunk { animation: ani4 .7s; }
 @keyframes ani4 {
   0% { transform: translate(0px, 425px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
-#ani_left_tree_left_leaf {
-  animation: ani5 9s; }
+#ani_left_tree_left_leaf { animation: ani5 1.2s; }
 @keyframes ani5 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
   51% { transform: translate(0px, 310px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
-#ani_right_tree_upper_right_leaf {
-  animation: ani2 8s; }
+#ani_right_tree_upper_right_leaf { animation: ani2 1.3s; }
 
-#ani_right_tree_upper_left_leaf {
-  animation: ani2 6s; }
+#ani_right_tree_upper_left_leaf { animation: ani2 1.4s; }
 
-#ani_right_tree_lower_leaf {
-  animation: ani8 5s; }
+#ani_right_tree_lower_leaf { animation: ani8 1.5s; }
 @keyframes ani8 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
   51% { transform: translate(0px, 370px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
-#ani_right_tree_trunk {
-  animation: ani9 2s ; }
+#ani_right_tree_trunk { animation: ani9 .7s; }
 @keyframes ani9 {
   0% { transform: translate(0px, 425px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
