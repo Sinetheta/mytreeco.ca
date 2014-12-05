@@ -69,10 +69,6 @@
   max-height: 600px;
   pointer-events: none;
 
-  * {
-    pointer-events: auto;
-  }
-
   .footer-extend,
   .footer-main,
   .footer-mountains,
@@ -115,12 +111,14 @@
 
 .tree-grow {
   display: none;
-  .magellan-arrived-sustainability & {
+  .magellan-arrived-sustainability &,
+  .magellan-arrived-services &,
+  .magellan-arrived-contact & {
     display: block;
   }
 }
 #ani_left_tree_shrub {
-  animation: ani1 7s;
+  animation: ani1 5s;
   animation-timing-function: ease-out; }
 @keyframes ani1 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
@@ -129,7 +127,7 @@
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
 #ani_left_tree_right_leaf {
-  animation: ani2 11s; }
+  animation: ani2 7s; }
 @keyframes ani2 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
@@ -137,16 +135,16 @@
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
 #ani_left_tree_middle_leaf {
-  animation: ani2 13s; }
+  animation: ani2 8s; }
 
 #ani_left_tree_trunk {
-  animation: ani4 8s; }
+  animation: ani4 3s; }
 @keyframes ani4 {
   0% { transform: translate(0px, 425px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
 #ani_left_tree_left_leaf {
-  animation: ani5 15s; }
+  animation: ani5 9s; }
 @keyframes ani5 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
@@ -154,13 +152,13 @@
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
 #ani_right_tree_upper_right_leaf {
-  animation: ani2 12s; }
+  animation: ani2 8s; }
 
 #ani_right_tree_upper_left_leaf {
-  animation: ani2 10s; }
+  animation: ani2 6s; }
 
 #ani_right_tree_lower_leaf {
-  animation: ani8 8s; }
+  animation: ani8 5s; }
 @keyframes ani8 {
   0% { transform: translate(0px, 0px) scale(1, 0); }
   50% { transform: translate(0px, 0px) scale(1, 0); }
@@ -168,7 +166,96 @@
   100% { transform: translate(0px, 0px) scale(1, 1); } }
 
 #ani_right_tree_trunk {
-  animation: ani9 4s ; }
+  animation: ani9 2s ; }
 @keyframes ani9 {
   0% { transform: translate(0px, 425px) scale(1, 0); }
   100% { transform: translate(0px, 0px) scale(1, 1); } }
+
+.footer-links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 17%;
+  max-width: 1024px;
+  pointer-events: auto;
+}
+
+.isa {
+  position: absolute;
+  width: 6.5%;
+  top: 12%;
+  left: 82%;
+}
+
+.tree-counter {
+  position: absolute;
+  text-align: center;
+  font-size: .9em;
+  color: #d9d9d9;
+  width: 100%;
+  top: 18%;
+  cursor: inherit;
+    @media (max-width: 650px) { font-size: .5em; }
+}
+
+.email-button {
+  position: absolute;
+  height: 20%;
+  width: 5%;
+  top: 56%;
+  left: 41%;
+  fill: #d9d9d9;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.email-button:hover {  fill: #332822;  }
+
+.testimonial-button {
+  position: absolute;
+  height: 20%;
+  width: 10%;
+  top: 56%;
+  left: 28%;
+  fill: #d9d9d9;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.testimonial-button:hover {  fill: #332822;  }
+
+.phone {
+  position: absolute;
+  height: 20%;
+  width: 14%;
+  top: 56%;
+  left: 60%;
+  fill: #d9d9d9;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.phone:hover {  fill: #332822;  }
+
+.g-plus {
+  position: absolute;
+  height: 20%;
+  width: 4%;
+  top: 56%;
+  left: 48%;
+  fill: #d9d9d9;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.g-plus:hover {  fill: #df6c39;  }
+
+
+.facebook {
+  position: absolute;
+  height: 20%;
+  width: 4%;
+  top: 56%;
+  left: 54%;
+  fill: #d9d9d9;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.facebook:hover {  fill: #888e99;  }
+

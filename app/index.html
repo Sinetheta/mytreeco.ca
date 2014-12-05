@@ -17,34 +17,11 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <link href='//fonts.googleapis.com/css?family=Hind:400normal|Alegreya+Sans:700normal' rel='stylesheet' type='text/css'>
-
+    <link href='//fonts.googleapis.com/css?family=Hind:400normal|Hind:600semi-bold|Alegreya+Sans:700normal' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <svg height="0px" >
-      <defs>
-        <filter id="drop-shadow">
-          <feGaussianBlur stdDeviation="4" in="SourceAlpha" ></feGaussianBlur>
-          <feOffset dx="0" dy="0" result="offsetblur" ></feOffset>
-          <feFlood flood-color="#727272"></feFlood>
-          <feComposite operator="in" in2="offsetblur" ></feComposite>
-          <feMerge>
-            <feMergeNode in="SourceGraphic" ></feMergeNode>
-          </feMerge>
-        </filter>
-      </defs>
-      <symbol id="all_trees_viewbox" width="1024px" height="600px" viewBox="0 0 1024 600" preserveAspectRatio="none">
-        <path id="left_tree_shrub" fill="#2E732E" d="M949.9 262.1c0 18.5-14.7 39.1-32.1 43.8c-17.4 4.7-27.4 3.7-27.4 3.7 s-34.6 27.3-55.8 12.4c-21.1-14.9-26.4-53.3-9-84C850.9 193.5 950 189.8 949.9 262.1z" ></path>
-        <path id="left_tree_trunk" fill="#655114" d="M884.9 458.7c0 0-5.5-61.7-20.1-106.9c-12.9-40.1-15.2-52.4-15.2-52.4l24 62.9 c0 0-1.4-62.7-1.4-88.2c0-25.5 6.2-41.3 6.2-41.3l4.5 97.3l29.3-42c0 0-24.4 43.3-24.8 57c-1.1 33.8 10.5 113.7 10.5 113.7H884.9z"></path>
-        <path id="left_tree_middle_leaf" fill="#3D993F" d="M907.5 296.1c0 0-7 4.7-11.8-2.9c-4.8-7.7-3.2-12.2-3.2-12.2 s5.1 0.3 9.7 2.5C910.6 287.8 907.5 296.1 907.5 296.1z"></path>
-        <path id="left_tree_left_leaf" fill="#3D993F" d="M851.9 305.9c0 0-5.2-0.4-4.7-5.9c0.6-5.6 3.1-7.2 3.1-7.2 s2.4 2.1 3.8 4.9C856.7 303 851.9 305.9 851.9 305.9z"></path>
-        <path id="left_tree_right_leaf" fill="#3D993F" d="M908.4 297.6c0 0-9.7-4.7-4.3-15c5.4-10.2 11.4-11.4 11.4-11.4 s3 5.9 3.4 12.4C919.7 295.8 908.4 297.6 908.4 297.6z"></path>
-        <path id="right_tree_trunk" fill="#655114" d="M963.3 460c0 0 2.8-90.3 0.6-128.4c-2.3-38.1 2.8-42 2.8-42s3.4 48.4 4.5 84 c1.1 35.5 9.1 87.3 9.1 87.3L963.3 460z"></path>
-        <path id="right_tree_lower_leaf" fill="#3D993F" d="M970.6 361.9c0 0-4.7-5.9 1.8-10.7c6.5-4.8 10.6-3.7 10.6-3.7 s0.1 4.6-1.6 8.8C978.3 364.2 970.6 361.9 970.6 361.9z"></path>
-        <path id="right_tree_upper_left_leaf" fill="#3D993F" d="M965.2 297.9c0 0-7 4.7-11.8-2.9 c-4.8-7.7-3.2-12.2-3.2-12.2s5.1 0.3 9.7 2.5C968.4 289.5 965.2 297.9 965.2 297.9z"></path>
-        <path id="right_tree_upper_right_leaf" fill="#3D993F" d="M966.2 299.3c0 0-9.7-4.7-4.3-15 c5.4-10.2 11.4-11.4 11.4-11.4s3 5.9 3.4 12.4C977.5 297.5 966.2 299.3 966.2 299.3z"></path>
-      </symbol>
-    </svg>
+    <div id="modals" class="reveal-modal" data-reveal></div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="0px"><defs><filter id="drop-shadow"><feGaussianBlur stdDeviation="4" in="SourceAlpha"></feGaussianBlur><feOffset dx="0" dy="0" result="offsetblur"></feOffset><feFlood flood-color="#727272"></feFlood><feComposite operator="in" in2="offsetblur"></feComposite><feMerge><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><symbol id="all_trees_viewbox" width="1024px" height="600px" viewBox="0 0 1024 600" preserveAspectRatio="none"><path id="left_tree_shrub" fill="#2E732E" d="M949.9 262.1c0 18.5-14.7 39.1-32.1 43.8c-17.4 4.7-27.4 3.7-27.4 3.7 s-34.6 27.3-55.8 12.4c-21.1-14.9-26.4-53.3-9-84C850.9 193.5 950 189.8 949.9 262.1z"></path><path id="left_tree_trunk" fill="#655114" d="M884.9 458.7c0 0-5.5-61.7-20.1-106.9c-12.9-40.1-15.2-52.4-15.2-52.4l24 62.9 c0 0-1.4-62.7-1.4-88.2c0-25.5 6.2-41.3 6.2-41.3l4.5 97.3l29.3-42c0 0-24.4 43.3-24.8 57c-1.1 33.8 10.5 113.7 10.5 113.7H884.9z"></path><path id="left_tree_middle_leaf" fill="#3D993F" d="M907.5 296.1c0 0-7 4.7-11.8-2.9c-4.8-7.7-3.2-12.2-3.2-12.2 s5.1 0.3 9.7 2.5C910.6 287.8 907.5 296.1 907.5 296.1z"></path><path id="left_tree_left_leaf" fill="#3D993F" d="M851.9 305.9c0 0-5.2-0.4-4.7-5.9c0.6-5.6 3.1-7.2 3.1-7.2 s2.4 2.1 3.8 4.9C856.7 303 851.9 305.9 851.9 305.9z"></path><path id="left_tree_right_leaf" fill="#3D993F" d="M908.4 297.6c0 0-9.7-4.7-4.3-15c5.4-10.2 11.4-11.4 11.4-11.4 s3 5.9 3.4 12.4C919.7 295.8 908.4 297.6 908.4 297.6z"></path><path id="right_tree_trunk" fill="#655114" d="M963.3 460c0 0 2.8-90.3 0.6-128.4c-2.3-38.1 2.8-42 2.8-42s3.4 48.4 4.5 84 c1.1 35.5 9.1 87.3 9.1 87.3L963.3 460z"></path><path id="right_tree_lower_leaf" fill="#3D993F" d="M970.6 361.9c0 0-4.7-5.9 1.8-10.7c6.5-4.8 10.6-3.7 10.6-3.7 s0.1 4.6-1.6 8.8C978.3 364.2 970.6 361.9 970.6 361.9z"></path><path id="right_tree_upper_left_leaf" fill="#3D993F" d="M965.2 297.9c0 0-7 4.7-11.8-2.9 c-4.8-7.7-3.2-12.2-3.2-12.2s5.1 0.3 9.7 2.5C968.4 289.5 965.2 297.9 965.2 297.9z"></path><path id="right_tree_upper_right_leaf" fill="#3D993F" d="M966.2 299.3c0 0-9.7-4.7-4.3-15 c5.4-10.2 11.4-11.4 11.4-11.4s3 5.9 3.4 12.4C977.5 297.5 966.2 299.3 966.2 299.3z"></path></symbol></svg>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -52,8 +29,8 @@
       <nav class="main-menu" data-magellan-expedition="fixed">
         <div class="container">
         <h1 class="brand-site">
-          <img src="/images/logo_green.svg" alt="Treeco Tree Service" class="hide-fixed"></img>
-          <img src="/images/logo_green.svg" alt="Treeco Tree Service" class="show-fixed"></img>
+          <a href="/"><img src="/images/logo_green.svg" alt="Treeco Tree Service" class="hide-fixed"></img></a>
+          <a href="/"><img src="/images/logo_green.svg" alt="Treeco Tree Service" class="show-fixed"></img></a>
         </h1>
           <nav>
             <ul>
@@ -67,51 +44,76 @@
       </nav>
 
       <section id="treeco" data-magellan-destination="treeco">
-        <h2>About Treeco</h2>
-        At Treeco, we have over <i>13 years of experience</i> in the tree service industry.<p>
-        We have an <a href="http://www.isa-arbor.com/" target="_blank">ISA Certified Arborist</a> on staff, with additional Tree Risk Assessment Qualification training.  We are fully qualified to assess your job, give advice on solutions, and are equipped with the tools to perform the required tasks.
-        <p>At Treeco, we have made it a primary mandate to not only reduce, but actually restore the damaging environmental impacts created by the tree industry.
+        <p><br><p>At Treeco, we have over <i>13 years of experience</i> in the tree service industry.<p>
+        We have an ISA Certified Arborist on staff, with additional Tree Risk Assessment Qualification (TRAQ) Certification. We are fully qualified to assess any job, give advice on solutions, and are equipped with all the tools to overcome any challenges we may face.
+        <p>At Treeco, we have made it our primary mandate to not only reduce, but also to restore the damaging environmental impacts created by the tree service industry.
       </section>
-      <hr>
-      <section><p>"This guy chops the best trees!"   — <i>Not his friend</i> </p></section>
-      <hr>
+      <div class="line-break break-top"></div>
+      <section>
+        <div class="testimonial">"We had three large trees to be cut down. I did get a few quotes for this. Kiley seemed very professional and explained exactly how he was going to take these down without damaging any trees below. Kiley completed the work as discussed and thoroughly cleaned up all the debris. Next time I will just call Treeco Tree Service"</div>
+        <div class="testimonial-name">Murray Cherkas</div>
+        <div class="testimonial-location">Qualicum Beach, BC</div>
+      </section>
+      <div class="line-break break-bottom"></div>
       <section id="sustainability" data-magellan-destination="sustainability">
         <h2>Sustainability</h2>
-        Because of our focus of “restoration”, we have developed the <i>Treeco Two Tree Guarantee</i> program:  <strong>For every tree that Treeco removes, we will plant two more at a different location!</strong><p>
-        Another green initiative that Treeco is proud to present is the use of <strong>Vegetable oil</strong> in our chainsaws!  This eliminates the hundreds of litres of waste petroleum oil spread in to the environment every year.<p>
-        <strong>Click the Χ's to find out more.</strong>
+        Following these eco-friendly principles, we have developed the
+        <a href="../modals/two-tree.html" data-reveal-id="modals" data-reveal-ajax="true">Treeco Two Tree Guarantee</a> program: <strong>For every tree that Treeco removes, we will plant two more at a different location!</strong><p>
+        Another green initiative that Treeco is proud to present is the use of
+        <a href="../modals/veggie-oil.html" data-reveal-id="modals" data-reveal-ajax="true">Vegetable oil</a> in our chainsaws!  This eliminates the hundreds of litres of waste petroleum oil introduced into the environment by a tree service companies every year.<p>
       </section>
-      <hr>
-      <section><p>"Treeco uses vegetable oil!  Now THAT'S sustainability I can get behind!"   — <i>Hippie Client</i> </p></section>
-      <hr>
+      <div class="line-break break-top"></div>
+      <section>
+        <div class="testimonial">"Kiley was a very knowledgeable Arborist with an easy going, trustworthy mannor.  He was accommodating with my schedule, reliable and a good price"</div>
+        <div class="testimonial-name">Joyce T</div>
+        <div class="testimonial-location">Nanoose Bay BC</div>
+      </section>
+      <div class="line-break break-bottom"></div>
       <section id="services" data-magellan-destination="services">
         <h2>Services</h2>
-        The following is just a few of the services we provide.
-        <ul style="list-style-type:disc;padding-left:5%">
-        <li><strong>Pruning:</strong> As certified arborists, we can help determine what type of pruning is necessary</li><br>
-        <li><strong>Removal:</strong> We will always try to promote a healthy tree, but sometimes tree removal is necessary</li><br>
-        <li><strong>Stump Grinding:</strong> We can grind as much as 12 inches below grade, including adjoining roots</li><br>
-        <li><strong>Shrub and Hedge Trimming:</strong> Let our steady hands create precision hedging effects.  Our bucket-truck aids in reaching those hard-to-get places</li><br>
-        <li><strong>Arborist Reports:</strong> We are well versed in municipal regulations, and can create arborist reports for properties</li><br>
-        <li><strong>Animal Rescue:</strong> As an absolutely <i>FREE</i> service, we will rescue your beloved pets from their adventures.</li>
-        </ul>
+        The following is just a few of the services we provide.<p>
+          <div class="content-services-left">
+            <strong>Pruning:</strong>
+            <br>As Certified Arborists we can determine what type of pruning is necessary to maintain or improve the health, appearance and safety of all trees
+            <p>
+            <strong>Removal:</strong>
+            <br>We will always try to promote a healthy tree, but sometimes tree removal is necessary
+            <p>
+            <strong>Stump Grinding:</strong>
+            <br>We can grind as much as 12 inches below grade, including adjoining roots
+          </div>
+          <div class="content-services-right">
+            <strong>Shrub and Hedge Trimming:</strong>
+            <br>Let our steady hands create precision hedging effects.  Our bucket-truck aids in reaching those hard-to-get places
+            <p>
+            <strong>Arborist Reports:</strong>
+            <br>We are well versed in municipal regulations, and can facilitate any arborist documentation required.
+            <p>
+            <strong>Animal Rescue:</strong>
+            <br>As an absolutely <i>FREE</i> service, we will rescue your beloved pets from their adventures.
+          </div>
       </section>
-      <hr>
-      <section><p>"Treeco saved my kitten AND satisfied me emotionally during my time of crisis"   — <i>Happy Pet-Owner</i> </p></section>
-      <hr>
+      <div class="line-break break-top"></div>
+      <section>
+        <div class="testimonial">"Treeco saved my kitten AND satisfied me emotionally during my time of crisis"</div>
+        <div class="testimonial-name"> Happy Pet-Owner</div>
+        <div class="testimonial-location"> Foresty Area, Coombs</div>
+      </section>
+      <div class="line-break break-bottom"></div>
       <section id="contact" data-magellan-destination="contact">
         <h2>Contact</h2>
-        <strong>Treeco Tree Service Ltd.</strong>
+        <strong>Treeco Tree Service Ltd.</strong><br>
         Coombs BC<br>
-        250-228-8733<br>
-        info@mytreeco.ca<br>
+        <a href="tel:+1250228733">+1.250.228.8733</a><br>
+        <a href="mailto:info@mytreeco.ca">info@mytreeco.ca</a><br>
         Registered with WorkSafeBC<br>
         Full Commercial Liability Insurance <br>
         <p></p>
         <strong>Kiley McFarlen</strong><br>
         ISA Certified Arborist<br>
         ISA Certified Tree Risk Assessor<br>
-        ISA Certification Number PN-7873A<br>
+        ISA Certification Number PN-7873A
+        <p><p>
       </section>
     </div>
 
@@ -137,24 +139,34 @@
         </svg>
         </div>
         <div class="footer-main"></div>
-        <button class="info-button" info-bubble-target="#pruning" href="#" data-reveal-id="modal1"><strong>Χ</strong></button>
-        <div id="modal1" class="reveal-modal" data-reveal>
-          <h2>Pruning</h2>
-          Pruning is the most common tree maintenance procedure.<br>
-          As Certified Arborists we can determine what type of pruning is necessary to maintain or improve the health, appearance and safety of all trees.<br>
-          <img src="/images/pruning.jpg" alt="Treeco Pruning" width="100%">
-          <strong>Structural:</strong> Trains trees to grow in a specific manner.  Generally improves the strength and longevity of a tree and can be an annual procedure for fruit trees and decorative trees<br>
-          <strong>Crown Reduction:</strong> Reduces the overal size of the crown or canopy of the tree.  Can drastically increase the amount of sunlight in an area.<br>
-          <strong>Crown Raising:</strong> Removes lower branches to improve view, provide clearance for buildings, etc<br>
-          <strong>Dead-Wood Removal:</strong> Selective removal of dead, diseased, broken, or weakly attached branches from the crown.  Improves general health of the tree.<br>
-          <strong>View Enhancements:</strong> General pruning to enhance a specific view, while not jeapordizing the health or stability of the tree.<br>
-          <strong>Spiral Pruning/Wind Firming:</strong> Selectively removing branches to increase airflow through the crown.  Decreases the potential for the tree to be blown over during storms.<br>
-          <a class="close-reveal-modal">&#215;</a>
-        </div>
-        <button class="info-button" info-bubble-target="#button2"><strong>Χ</strong></button>
-        <button class="info-button" info-bubble-target="#button3"><strong>Χ</strong></button>
-        <button class="info-button" info-bubble-target="#button4"><strong>Χ</strong></button>
-        <button class="info-button" info-bubble-target="#button5"><strong>Χ</strong></button>
+
+
+
+  <div class="footer-links">
+
+          <img class="isa" src="/images/isacertified.png" alt="ISA Certified"></img>
+          <div class="tree-counter">Number of trees planted:&nbsp <strong> 16</strong></div>
+          <a href="../modals/email.html" data-reveal-id="modals" data-reveal-ajax="true">
+            <svg class="email-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 65.5 50" enable-background="new 0 0 65.5 50" xml:space="preserve"><path id="email-icon" d="M57.3 15.4c-5.5 3.9-11.1 7.7-16.5 11.5c-2.3 1.6-6.2 4.9-9.1 4.9l0 0h-0.1 c-2.9 0-6.7-3.3-9.1-4.9c-5.5-3.9-11-7.7-16.5-11.5c-2.5-1.7-6-5.7-6-8.9C0 3 1.9 0 5.7 0h52c3.1 0 5.7 2.5 5.7 5.7 C63.3 9.7 60.4 13.3 57.3 15.4z M63.3 44.3c0 3.1-2.5 5.7-5.7 5.7h-52C2.5 50 0 47.5 0 44.3V16.1c1.1 1.2 2.3 2.2 3.5 3.1 c5.9 4 11.8 8 17.5 12.3c3 2.2 6.7 4.9 10.5 4.9h0.1l0 0c3.9 0 7.5-2.7 10.5-4.9c5.7-4.2 11.7-8.2 17.6-12.3 c1.3-0.9 2.5-1.9 3.5-3.1C63.3 16.1 63.3 44.3 63.3 44.3z"></path><rect x="69.4" y="19.2" fill="none" width="65.5" height="13.5"></rect></svg></a>
+          <a href="../modals/testimonial.html" data-reveal-id="modals" data-reveal-ajax="true">
+            <svg class="testimonial-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="75 75 150 50" enable-background="new 75 75 150 50" xml:space="preserve"><path id="speech2" d="M223.8 107.7c-1.4 2-3.2 3.7-5.6 5.1c0.2 0.5 0.4 0.9 0.6 1.3c0.2 0.4 0.4 0.8 0.7 1.1 c0.3 0.4 0.5 0.6 0.6 0.8c0.2 0.2 0.4 0.5 0.7 0.8c0.3 0.4 0.6 0.6 0.7 0.7l0.1 0.1c0.1 0.1 0.1 0.1 0.1 0.1l0.1 0.1 c0 0.1 0.1 0.1 0.1 0.2l0.1 0.1c0 0 0 0.1 0.1 0.2c0 0.1 0 0.2 0 0.2s0 0.1 0 0.2c-0.1 0.3-0.2 0.5-0.4 0.6 c-0.2 0.2-0.4 0.2-0.6 0.2c-1-0.1-1.8-0.3-2.5-0.5c-3-0.8-5.6-2-8-3.7c-1.7 0.5-3.4 0.7-5 0.7c-5.2 0-9.7-1.3-13.6-3.8 c1.1 0.1 2 0.1 2.5 0.1c3.1 0 6-0.4 8.9-1.3c2.8-0.9 5.4-2.1 7.6-3.7c2.4-1.8 4.2-3.8 5.5-6.1s1.9-4.7 1.9-7.3 c0-1.5-0.2-2.9-0.7-4.4c2.5 1.4 4.4 3.1 5.9 5.1c0.6 0.8 1.1 1.6 1.4 2.4V77.7c0.1-1.5-1.2-2.7-2.7-2.7h-44.5 c-1.5 0-2.7 1.2-2.7 2.7v12c0.4-1.1 1.1-2.2 1.9-3.2c1.8-2.3 4.3-4 7.4-5.4c3.1-1.3 6.5-2 10.2-2s7 0.7 10.2 2 c3.2 1.3 5.6 3.1 7.4 5.4c1.8 2.3 2.7 4.7 2.7 7.4c0 2.7-0.9 5.1-2.7 7.4c-1.8 2.3-4.3 4-7.4 5.4c-3.1 1.3-6.5 2-10.2 2 c-1.6 0-3.3-0.2-5.1-0.5c-2.4 1.7-5 2.9-8 3.7c-0.7 0.2-1.5 0.3-2.5 0.5h-0.1c-0.2 0-0.4-0.1-0.6-0.2c-0.2-0.2-0.3-0.4-0.3-0.6 c0-0.1 0-0.1 0-0.2s0-0.1 0-0.2c0-0.1 0-0.1 0.1-0.2l0.1-0.1c0 0 0-0.1 0.1-0.2c0.1-0.1 0.1-0.2 0.1-0.1c0 0 0.1 0 0.1-0.1 c0-0.3 0.1-0.3 0.1-0.3c0.1-0.1 0.3-0.4 0.7-0.7c0.3-0.4 0.6-0.6 0.7-0.8c0.2-0.2 0.4-0.5 0.6-0.8c0.3-0.4 0.5-0.7 0.7-1.1 s0.4-0.8 0.6-1.3c-2.3-1.5-4.2-3.1-5.6-5.2c-0.5-0.7-0.9-1.5-1.2-2.3v24.1c0 1.5 1.1 2.9 2.6 2.9h23.9h20.7c1.5 0 2.7-1.2 2.7-2.7 v-16.9C224.7 106.2 224.3 107 223.8 107.7z"></path><path id="speech1" d="M201.2 105.1l1.3-0.9l1.5 0.3c1.5 0.3 3 0.4 4.4 0.4c2.9 0 5.7-0.5 8.2-1.5s4.6-2.3 6.1-4.1 c1.5-1.7 2.3-3.5 2.3-5.5s-0.8-3.8-2.3-5.5c-1.5-1.7-3.5-3.1-6.1-4.1c-2.5-1-5.3-1.5-8.2-1.5s-5.7 0.5-8.2 1.5s-4.6 2.3-6.1 4.1 c-1.5 1.7-2.3 3.5-2.3 5.5c0 1.6 0.5 3.1 1.5 4.5c1 1.5 2.4 2.7 4.3 3.8l2.8 1.6l-1 2.4C200.1 105.9 200.7 105.5 201.2 105.1z"></path><rect y="198.4" fill="none" width="233.2" height="103.2"></rect><text transform="matrix(1 0 0 1 75 96.6011)" font-family="'ArialMT'" font-size="19.85">Write us a</text><text transform="matrix(1 0 0 1 75 117.4443)" font-family="'ArialMT'" font-size="18.8575">testimonial</text></svg></a>
+            <a href="tel:+1250228733">
+              <svg class="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 210 50" enable-background="new 0 0 210 50" xml:space="preserve"><path d="M1.3 5c0.9-1.6 2-3.7 3.9-4.4C5.6 0.4 6.3 0.2 7.1 0H2.7C1.2 0 0 1.2 0 2.7v5.4C0.3 7.1 0.8 6 1.3 5z"></path><path d="M12.9 2.3c1.2 2 2.3 4.2 3.5 6.2c0.6 1 1.7 2.1 1.7 3.2c0 2.2-6.6 5.4-6.6 7.4c0 1 0.9 2.3 1.4 3.1 c3.7 6.6 8.2 11.2 14.8 14.8c0.9 0.5 2.2 1.4 3.1 1.4c1.9 0 5.2-6.5 7.4-6.5c1.1 0 2.3 1.1 3.2 1.7c2 1.2 4.1 2.3 6.2 3.5 c0.5 0.3 1.6 0.8 2.3 1.3V2.7C50.1 1.2 48.8 0 47.3 0H11.5C12.1 0.6 12.6 1.8 12.9 2.3z"></path><path  d="M49.4 44.9c-0.8 1.8-2.8 3-4.4 3.8c-1 0.6-2 1-3.1 1.3l5.3 0c1.5 0 2.7-1.2 2.7-2.7v-4 C49.8 43.9 49.6 44.5 49.4 44.9z"></path><path  d="M28.8 48c-2.2-0.8-4.4-1.8-6.3-3C16.3 41.2 8.8 33.8 5 27.6c-1.2-2-2.2-4.1-3-6.3c-0.7-1.9-1.5-3.8-2-5.7 v31.6c0 1.5 1.2 2.7 2.7 2.7h23.9l7.8 0C32.5 49.4 30.7 48.7 28.8 48z"></path><rect x="56.3" y="18.1" fill="none" ></rect><text transform="matrix(1 0 0 1 56.3314 31.402)" font-family="'Hind'" font-size="24">+1.250.228.8733</text></svg></a>
+            <a href="https://plus.google.com/110576761222250677306/about">
+              <svg class="g-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 61 50" enable-background="new 0 0 61 50" xml:space="preserve"><g id="g-icon"><path id="center-g" d="M16.2 24.6c1.4-1.6 1.9-3.7 1.9-4.8c0-5.4-3.1-13.7-9.3-13.7c-1.9 0-4 1-5.2 2.5 c-1.3 1.6-1.5 3.6-1.5 5.5c0 5 2.6 12.3 9 12.3C13 26.5 14.9 26 16.2 24.6z"></path><path id="left-g" d="M0 39.3c4.2-1.8 8.5-1.9 11.3-2c-1-1.3-2.2-2.7-2.2-5.1c0-1.3 0.4-2 0.7-2.9 c-0.8 0.1-1.6 0.1-2.4 0.1c-3.3 0-5.5-0.7-7.5-2.3V39.3z"></path><path id="around-plus" d="M41 17v9.5h-4V17h-9.4v-3.9h9.4V3.7h4v9.4h9V2.7C50.1 1.2 48.8 0 47.3 0H2.7 C1.2 0 0 1.2 0 2.7v5c4.2-3.4 8.8-4 12.6-4.1h15.7L24.2 7c0 0-3.9 0-4.5 0c1.8 1.6 4.5 4.4 4.5 9.4c0 5.5-2.9 8.1-6 10.6 c-1 1-2.1 2-2.1 3.6c0 1.6 1.1 2.5 1.9 3.2l2.7 2.1c3.3 2.8 7.5 5.3 7.5 10.4c0 1.3-0.2 2.2-0.6 3.6L47.3 50c1.5 0 2.7-1.2 2.7-2.7 V17H41z"></path><path id="bottom-g" d="M23.1 49.2c0-3.8-3.6-5.8-9.3-9.8c-0.6-0.1-1-0.1-1.7-0.1c-0.7 0-4.7 0.1-7.8 1.2 c-1 0.4-2.8 0.6-4.3 2.5v4.1c0 1.5 1.2 2.7 2.7 2.7h20.4C23.1 49.7 23.1 49.6 23.1 49.2z"></path></g><rect x="60.3" y="4.1" fill="none"></rect></svg></a>
+            <a href="https://www.facebook.com/mytreeco">
+              <svg class="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="facebook-button" x="0px" y="0px" viewBox="0 0 61 50" enable-background="new 0 0 61 50" xml:space="preserve"><path id="facebook" d="M47.3 0H2.7C1.2 0 0 1.2 0 2.7v44.4c0 1.5 1.2 2.7 2.7 2.7h24V30.6h-6.5v-7.5h6.5v-5.6 c0-6.5 4-9.9 9.7-9.9c2.7 0 5.2 0.2 5.8 0.3v6.7h-4c-3.2 0-3.7 1.5-3.7 3.7v4.8H42l-0.9 7.5h-6.6V50h12.7c1.5 0 2.7-1.2 2.7-2.7V2.7 C50.1 1.2 48.8 0 47.3 0z"></path><rect x="55.1" y="3.2" fill="none" width="80.9" height="43.7"></rect></svg></a>
+
+
+</div>
+<button class="info-button" info-bubble-target="#removal" href="../modals/removal.html" data-reveal-id="modals" data-reveal-ajax="true"></button>
+        <button class="info-button" info-bubble-target="#stump" href="../modals/stump.html" data-reveal-id="modals" data-reveal-ajax="true"></button>
+        <button class="info-button" info-bubble-target="#equipment" href="../modals/equipment.html" data-reveal-id="modals" data-reveal-ajax="true"></button>
+        <button class="info-button" info-bubble-target="#arborist" href="../modals/arborist.html" data-reveal-id="modals" data-reveal-ajax="true"></button>
+        <button class="info-button" info-bubble-target="#pruning" href="../modals/pruning.html" data-reveal-id="modals" data-reveal-ajax="true"></button>
+
+
+
       </div>
     </footer>
 

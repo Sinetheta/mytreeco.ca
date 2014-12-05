@@ -2,50 +2,56 @@ $info-button-radius: 1em;
 
 .info-button {
   display: none;
-  width: 2 * $info-button-radius;
-  height: 2 * $info-button-radius;
-  margin: 0;
+  background: none;
+  width: 25px;
+  height: 25px;
   padding: 0;
-  color: white;
-  border: 2px solid white;
-  border-radius: 3 * $info-button-radius;
-  background: grey;
+  background-image: url(/images/expand.svg);
+  border: none;
   pointer-events: auto;
   cursor: pointer;
-    .magellan-arrived-services & {
+    .magellan-arrived-services &,
+    .magellan-arrived-contact & {
       display: block;
+      position: absolute;
     }
 }
+
+.info-button:hover {
+    background-image: url(/images/expand-hover.svg);
+    width: 25px;
+    height: 25px;
+  }
 
 #page-footer [info-bubble-target] {
   position: absolute;
 }
 
-[info-bubble-target="#pruning"] {
+[info-bubble-target="#removal"] {
   top: 15%;
   left: 15%;
   animation-name: bubble-in;
   animation-duration: 1s;
 }
-[info-bubble-target="#button2"] {
+[info-bubble-target="#stump"] {
   top: 79%;
   left: 12%;
   animation-name: bubble-in;
   animation-duration: 1.5s;
 }
-[info-bubble-target="#button3"] {
+[info-bubble-target="#equipment"] {
   top: 60%;
   left: 20%;
   animation-name: bubble-in;
   animation-duration: 2s;
 }
-[info-bubble-target="#button4"] {
+[info-bubble-target="#arborist"] {
   top: 67%;
   left: 80%;
   animation-name: bubble-in;
   animation-duration: 2.5s;
 }
-[info-bubble-target="#button5"] {
+[info-bubble-target="#pruning"] {
   top: 40%;
   left: 83%;
   animation-name: bubble-in;
@@ -58,15 +64,15 @@ $info-button-radius: 1em;
     height: 0em;
   }
   50% {
-    width: 2.5em;
-    height: 2.5em;
-  }
-  75% {
     width: 1.75em;
     height: 1.75em;
   }
+  75% {
+    width: 1.25em;
+    height: 1.25em;
+  }
   100% {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
   }
 }

@@ -1,15 +1,29 @@
 body {
   font-family: 'Hind', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.3em;
   color: #333;
   background: #fafafa;
 }
 
 h2 {
   font-family: "Alegreya Sans";
+  font-size: 28px;
   font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
+
+a {
+  color: #2E732E;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 .container {
   position: relative;
@@ -37,8 +51,64 @@ section:last-of-type {
   margin-bottom: 15em;
 }
 
-hr {
+.testimonial {
+  float: left;
+  width: 65%;
+  font-size: 16px;
+  font-weight: 600;
+  font-weight: bold;
+  margin-right: 3%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.testimonial-name {
+  float: right;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 40px;
+}
+.testimonial-location {
+  float: right;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+}
+
+.content-services-left {
+  float: left;
+  width: 40%;
+}
+
+.content-services-right {
+  float: right;
+  width: 40%;
+}
+
+.line-break {
+  display: inline-block;
   width: 80%;
-  height: 10px;
+  height: 2px;
   margin-left: 15%;
+  background-color: #696969;
+  color: #696969;
+}
+
+.break-top {
+  margin-top: 40px;
+}
+
+.break-bottom {
+  margin-bottom: 40px;
+}
+
+.center-text {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
