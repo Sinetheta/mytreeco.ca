@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<circle id="inner-circle" fill="#545454" cx="25" cy="25" r="21.2"></circle>
+<path id="outer-ring" fill="#FFFFFF" d="M25 3.8c11.7 0 21.2 9.5 21.2 21.2c0 11.7-9.5 21.2-21.2 21.2S3.8 36.7 3.8 25 C3.8 13.3 13.3 3.8 25 3.8 M25 0C11.2 0 0 11.2 0 25c0 13.8 11.2 25 25 25c13.8 0 25-11.2 25-25C50 11.2 38.8 0 25 0L25 0z"></path>
+<path id="plus-cross" fill="#E6E6E6" d="M21.3,11.9h7.5v9.4h9.3v7.5h-9.3v9.4h-7.5v-9.4h-9.3v-7.5h9.3V11.9z"></path>
+</svg>
