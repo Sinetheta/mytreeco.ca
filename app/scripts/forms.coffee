@@ -11,3 +11,6 @@ ajaxFormSubmit = (event) ->
 
 $ ->
   window.onsubmit = ajaxFormSubmit
+
+  $('[close-reveal-modal]').on 'click', ->
+    $(this).closest('.reveal-modal').foundation('reveal', 'close')
