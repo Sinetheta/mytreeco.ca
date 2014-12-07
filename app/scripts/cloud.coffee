@@ -2,7 +2,7 @@ class Cloud extends Movable
   constructor: ({@parent}) ->
     @distance = Math.random()
     super({container: @parent})
-    @template = @getRandomTemplate()
+    @template = @getTemplate()
     @element = $(@template)
     scale = (1 - 0.6 * @distance)
     @element.css(
@@ -10,12 +10,9 @@ class Cloud extends Movable
       )
       .appendTo(@wrapper)
 
-  templates: [
-    '<div class="cloud1"></div>'
-    '<div class="cloud2"></div>'
-  ]
-
-  getRandomTemplate: =>
-    @templates[Math.floor(Math.random() * @templates.length)]
+  getTemplate: ->
+    numberOfCloudFiles = 6
+    n = Math.floor(Math.random() * numberOfCloudFiles)
+    "<div class='cloud cloud#{n}'></div>"
 
 window.Cloud = Cloud

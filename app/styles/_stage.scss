@@ -26,29 +26,17 @@
   background-size: 100% 100%;
 
   &:after {
-    padding-top: 75%; /* 4:3 ratio */
+    $aspect-ratio-cloud1: (173px/400px);
+    padding-top: percentage($aspect-ratio-cloud1);
     display: block;
     content: '';
   }
 }
 
-.cloud1 {
-  @extend .cloud;
-  background-image: url(/images/cloud1.png);
-
-  &:after {
-    $aspect-ratio-cloud1: (584px/1112px);
-    padding-top: percentage($aspect-ratio-cloud1);
-  }
-}
-
-.cloud2 {
-  @extend .cloud;
-  background-image: url(/images/cloud1.png);
-
-  &:after {
-    $aspect-ratio-cloud2: (492px/945px);
-    padding-top: percentage($aspect-ratio-cloud2);
+// Must match actual cloud image files
+@for $i from 1 through 6 {
+  .cloud#{$i} {
+    background-image: url(/images/cloud#{$i}.png);
   }
 }
 
