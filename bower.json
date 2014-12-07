@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "foundation": "~5.4.7",
-    "bourbon": "~4.0.2"
+    "bourbon": "~4.0.2",
+    "jQueryKeyframes": "~0.0.6"
   }
 }
