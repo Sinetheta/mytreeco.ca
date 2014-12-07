@@ -18,5 +18,4 @@ class Cloud extends Movable
   getRandomTemplate: =>
     @templates[Math.floor(Math.random() * @templates.length)]
 
-
 window.Cloud = Cloud

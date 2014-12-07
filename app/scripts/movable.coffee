@@ -7,6 +7,14 @@ class Movable
       )
       .appendTo(@container)
 
+  @addKeyframe: (width) ->
+    $.keyframe.define
+      name: 'moveAcross'
+      '0%':
+        'transform': "translate(#{width}px)"
+      '100%':
+        'transform': "translate(#{-0.2 * width}px)"
+
   template: '<div class="cloud-wrapper">'
 
   distance: 0
@@ -16,8 +24,8 @@ class Movable
   greatestTravelTime: 30
 
   position:
-    top: '0%'
-    left: '0%'
+    top: '0'
+    left: '0'
 
   drift: (progress = 0) =>
     dfd = new $.Deferred()
@@ -26,10 +34,8 @@ class Movable
     animationDelay = Math.floor(-progress * travelTime)
     @wrapper.css(
       zIndex: -Math.floor(travelTime)
-      animation: "moveAcross #{travelTime}s linear"
-      'animation-delay': "#{animationDelay}s"
-      '-moz-animation-delay': "#{animationDelay}s"
-      '-webkit-animation-delay': "#{animationDelay}s"
+      'animation': "moveAcross #{travelTime}s linear #{animationDelay}s"
+      '-webkit-animation': "moveAcross #{travelTime}s linear #{animationDelay}s"
     )
     setTimeout =>
       dfd.resolve(this)
