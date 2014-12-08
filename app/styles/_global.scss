@@ -25,8 +25,12 @@ section {
     margin-top: 10em;
   }
 
+  &:first-of-type {
+    margin-top: 5em;
+  }
+
   &:last-of-type {
-    margin-bottom: 15em;
+    margin-bottom: 50vh;
   }
 }
 
