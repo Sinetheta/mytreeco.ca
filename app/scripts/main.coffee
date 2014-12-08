@@ -1,7 +1,7 @@
 initFoundation = (threshold) ->
   $(document).foundation
     'magellan-expedition':
-      destination_threshold: 200
+      destination_threshold: 100
       threshold: threshold
 
 $ ->
