@@ -1,7 +1,6 @@
 .main-menu {
   @include horizontal-list();
   font-family: 'Lato', sans-serif;
-  font-size: .7em;
   text-align: center;
   text-transform: uppercase;
   color: #D2D2D5;
@@ -16,6 +15,8 @@
   }
 
   li {
+    font-size: 15px;
+
     a {
       line-height: $tabbar-height;
       margin-left: 0.5em;
@@ -60,26 +61,8 @@
   }
 }
 
-
-.show-fixed {
-  display: none;
-}
-
-.fixed {
-  .hide-fixed {
-    display: none;
-  }
-
-  .show-fixed {
-    display: block;
-  }
-}
-
 @media (max-width: 800px) {
   .main-menu {
-    font-size: .5em;
-
-
     ul {
       margin-left: auto;
       margin-right: auto;
@@ -88,28 +71,18 @@
     }
 
     li {
+      font-size: 10px;
       padding-left: 0px;
 
       a {
         padding: .5em .5em;
       }
     }
-
-
-
   }
-
-
-
 }
 
 @media (max-width: 650px) {
-  .main-menu {
-    font-size: .5em;
-
-    img.show-fixed {
-      max-width: 0px;
-    }
+  .main-menu.fixed img {
+    display: none;
   }
-
 }

@@ -1,108 +1,82 @@
-body {
-  font-family: 'Hind', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1.3em;
-  color: #333;
-  background: #fafafa;
+.browsehappy {
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+  color: $black;
+  background: $iron;
 }
 
 h2 {
-  font-family: "Alegreya Sans";
-  font-size: 28px;
-  font-weight: 700;
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
-a {
-  color: #2E732E;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #1D471D;
-  text-decoration: underline;
-}
-
-
 .container {
   position: relative;
-  max-width: $max-width;
+  max-width: $row-width;
   margin: 0 auto;
 }
 
 section {
   width: 70%;
   margin-left: 23%;
+
+  + section {
+    margin-top: 10em;
+  }
+
+  &:last-of-type {
+    margin-bottom: 15em;
+  }
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  padding: 0.2em 0;
-  color: #000;
-  background: #ccc;
-}
-
-section + section {
-  margin-top: 10em;
-}
-
-section:last-of-type {
-  margin-bottom: 15em;
-}
-
-.content-services-left {
-  float: left;
-  width: 40%;
-}
-
-.content-services-right {
-  float: right;
-  width: 40%;
-}
-
-.line-break {
-  display: inline-block;
+hr {
   width: 80%;
-  height: 2px;
   margin-left: 15%;
-  background-color: #696969;
-  color: #696969;
-}
 
-.break-top {
-  margin-top: 40px;
-}
-
-.break-bottom {
-  margin-bottom: 40px;
-}
-
-.center-text {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (max-width: 400px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
+  &:nth-of-type(2n + 1) {
+    margin-top: 3em;
   }
 
-  section {
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+  &:nth-of-type(2n) {
+    margin-bottom: 3em;
   }
+}
 
-  .content-services-right {
-    width: 45%;
+.container {
+  blockquote {
+    margin-bottom: 40px;
+    border: none;
+
+    p, footer, cite {
+      font-size: 16px;
+      color: $body-font-color;
+    }
+
+    p, cite {
+      font-weight: bold;
+    }
+
+    p {
+      float: left;
+      width: 70%;
+    }
+
+    footer {
+      font-size: 14px;
+      font-style: italic;
+      float: left;
+      width: 25%;
+      margin-left: 5%;
+      text-transform: uppercase;
+    }
+
+    cite {
+      font-size: 15px;
+      font-style: normal;
+      &:before {
+        content: none;
+      }
+    }
   }
-  .content-services-left {
-    width: 45%;
-  }
-
-
 }
