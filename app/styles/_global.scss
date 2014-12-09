@@ -34,6 +34,15 @@ section {
   }
 }
 
+@media (max-width: 450px) {
+  section {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+
 hr {
   width: 80%;
   margin-left: 15%;
