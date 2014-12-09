@@ -276,7 +276,6 @@ module.exports = function (grunt) {
           removeCommentsFromCDATA: true,
           removeEmptyAttributes: true,
           removeOptionalTags: true,
-          removeRedundantAttributes: true,
           useShortDoctype: true
         },
         files: [{
